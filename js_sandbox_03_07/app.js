@@ -21,6 +21,7 @@ ulist.addEventListener('click', runEvent);
 function runEvent(e){
   //console.log(`Event Type: ${e.type}`);
   console.log(e.target);
+   if(e.target.parentElement.classList.contains('delete-item'))
   e.target.parentElement.parentElement.remove();
   e.preventDefault();
 }
